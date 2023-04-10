@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+*{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+  text-decoration: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 1rem;
+  max-height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-bar{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 83%;
+  font-size: 0.8rem;
+}
+a:hover{
+  text-decoration: underline;
+}
+.nav-bar img:hover{
+  background-color: gainsboro;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.nav-bar a, img {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.googlelogo{
+  margin-top: 2rem;
+  margin-left: 40%;
+}
+.search-div{
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  margin-top: 2rem;
+  margin-left: 30%;
+  border: 1px solid gainsboro;
+  width: 550px;
+  padding: 5px 5px 10px 10px;
+}
+#gsearch{
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border: white;
+  outline: none;
+}
+.no-outline:focus {
+  
+}
+.search-div div{
+  display: flex;
+  align-items: center;
+  margin-left: 260px;
+}
+.button{
+ margin-top: 1rem;
+ margin-left: 560px;
+}
+button{
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.language{
+  display: flex;
+  margin-left: 530px;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.language a{
+  margin-left: 5px;
+  margin-right: 5px;
+  color: blue;
+  cursor: pointer;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  margin-top: 190px;
+  padding-bottom: 10px;
+  background-color: #f0f0f5;
+  font-size: 0.95rem;
+}
+form::after{
+  text-decoration: none;
+}
+.footer a{
+  margin: 35px;
+}
+input{
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
